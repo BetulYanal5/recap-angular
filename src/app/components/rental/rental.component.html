@@ -1,0 +1,27 @@
+<table class="table">
+    <thead>
+        <tr>
+            <!-- <th>Marka</th>
+            <th>Müşteri ad soyad</th> 
+            <th>Dönüş tarihi</th>
+            <th>Kiralanma tarihi</th> -->
+            <th>Ad Soyad</th>
+            <th>Şirket</th>
+            <th>Marka</th>
+            <th>Kiralanma Tarihi</th>
+            <th>Dönüş Tarihi</th>
+        </tr>
+    </thead>
+      <tr *ngFor="let rentaldto of rentaldtos">
+          <!-- <th>{{rental.rentalId}}</th>
+          <th>{{rental.carId}}</th>
+          <td>{{rental.customerId}}</td>
+          <td>{{rental.returnDate}}</td>
+          <td>{{rental.rentDate}}</td> -->
+          <td>{{rentaldto.customerInfo}}</td>
+          <td>{{rentaldto.companyName}}</td>
+          <td>{{rentaldto.brandName}}</td>
+          <td>{{rentaldto.rentDate}}</td>
+          <td>{{rentaldto.returnDate}}</td>
+      </tr>
+</table>
