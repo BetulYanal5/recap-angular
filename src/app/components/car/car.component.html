@@ -15,13 +15,15 @@
         <th>Marka</th>
         <th>Renk</th>
         <th>Fiyat</th>
+        <th>Model Yılı</th>
     </tr>
 </thead>
     <tr *ngFor="let cardto of cardtos">
-        <th>{{cardto.carName}}</th>
-        <th>{{cardto.brandName}}</th>
-        <th>{{cardto.colorName}}</th>
-        <th>{{cardto.dailyPrice}}</th>
+        <td>{{cardto.carName}}</td>
+        <td>{{cardto.brandName}}</td>
+        <td>{{cardto.colorName}}</td>
+        <td>{{cardto.dailyPrice}}</td>
+        <td>{{cardto.modelYear}}</td>
        <!-- <td>{{car.id}}</td>
        <td>{{car.brandId}}</td>
        <td>{{car.colorId}}</td>
