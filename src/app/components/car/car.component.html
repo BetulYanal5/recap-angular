@@ -24,6 +24,10 @@
         <td>{{cardto.colorName}}</td>
         <td>{{cardto.dailyPrice}}</td>
         <td>{{cardto.modelYear}}</td>
+        <td>
+            <img *ngIf=" cardto.imagePath.length==0" width="100px" height="100px" [src]="apiUrl+defaultImage"/>
+            <img *ngIf=" cardto.imagePath.length!=0" width="100px" height="100px" [src]="apiUrl+cardto.imagePath[0]" /></td>
+          <td>
        <!-- <td>{{car.id}}</td>
        <td>{{car.brandId}}</td>
        <td>{{car.colorId}}</td>

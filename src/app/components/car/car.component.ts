@@ -17,7 +17,10 @@ export class CarComponent implements OnInit {
   cardtos:Cardto[]=[];
   dataLoaded=false;
   carImages:CarImage[]=[];
-  constructor(private carService:CarService,private cardtoService:CardtoService,private carImageService:CarImageService private activatedRoute:ActivatedRoute) {}
+  apiUrl="https://localhost:44382"
+  defaultImage="/images/defaultImage.png"
+  
+  constructor(private carService:CarService,private cardtoService:CardtoService,private carImageService:CarImageService, private activatedRoute:ActivatedRoute) {}
 
   ngOnInit(): void {
     //this.getCars();
@@ -65,11 +68,11 @@ export class CarComponent implements OnInit {
       this.carImages=response.data;
       this.dataLoaded=true;
     })
-    )  
+  }
   // getCarsByBrandId(brandId:number){
   //   this.carService.getCarsByBrandId(brandId).subscribe(response=>{
   //     this.cars=response.data;
   //   })
   // }
  
-}
+  }

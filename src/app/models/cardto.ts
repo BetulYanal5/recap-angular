@@ -6,4 +6,5 @@ export interface Cardto{
     colorName:string;
     dailyPrice:string; 
     modelYear:number;
+    imagePath:string[];
 }
